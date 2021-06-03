@@ -1,6 +1,5 @@
-@REM "C:\Users\Khan Alone\Desktop\CN\Lab 5\length.py" ;
-start python "C:/Users/Khan Alone/Desktop/CN/Lab 5/server.py" &
-start python "C:/Users/Khan Alone/Desktop/CN/Lab 5/echo.py" &
-start python "C:/Users/Khan Alone/Desktop/CN/Lab 5/length.py" &
-start python "C:/Users/Khan Alone/Desktop/CN/Lab 5/palindrome.py" &
-start python "C:/Users/Khan Alone/Desktop/CN/Lab 5/client.py" &
+start py "server.py" &
+start py "echo.py" &
+start py "length.py" &
+start py "palindrome.py" &
+start  py "client.py" &
