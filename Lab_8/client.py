@@ -21,11 +21,13 @@ req_file.append("0x0001")
 req_file.append(message[2])
 s.send(pickle.dumps(req_file))
 message=pickle.loads(s.recv(1024))
+end=message[2]/100
 wow=""
-while(message!="End"):
+while(end>=0):
     message=pickle.loads(s.recv(1024))
     wow=wow+message[2]
     s.send(pickle.dumps(message[1]))
+    end-=1
 print(wow)
 input("Press Enter to Exit")
 # close the connection

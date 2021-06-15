@@ -59,5 +59,4 @@ class commonThread(Thread):
         #loop until the chunk is empty (the file is exhausted)
         f.close()
         
-        self.clientsocket.send(pickle.dumps("End"))
         
